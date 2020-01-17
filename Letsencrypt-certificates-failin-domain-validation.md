@@ -265,7 +265,6 @@ executable=/opt/gitlab/embedded/bin/chef-client
     date content in file /var/opt/gitlab/nginx/www/.well-known/acme-challenge/tIqSYzS1vFP_Y4brcFAMHgYP48HSKOLhWocnBIqb0AY from none to 67a341
 
 
-​    
     --- /var/opt/gitlab/nginx/www/.well-known/acme-challenge/tIqSYzS1vFP_Y4brcFAMHgYP48HSKOLhWocnBIqb0AY    2020-01-17 03:56:56.414651155 +0800
     
        +++ /var/opt/gitlab/nginx/www/.well-known/acme-challenge/.chef-tIqSYzS1vFP_Y4brcFAMHgYP48HSKOLhWocnBIqb0AY20200117-14268-1e3v9ux        2020-01-17 03:56:56.414651155 +0800
@@ -275,7 +274,6 @@ executable=/opt/gitlab/embedded/bin/chef-client
        +tIqSYzS1vFP_Y4brcFAMHgYP48HSKOLhWocnBIqb0AY._lV8BpO6qTwNOerUfgtfCchYdn8cqRBECoCTrVCnCjs
 
 
-​    
        - change mode from '' to '0644'
     
        - change owner from '' to 'root'
@@ -284,18 +282,12 @@ executable=/opt/gitlab/embedded/bin/chef-client
     
        - restore selinux security context
 
-
-​    
      * file[git.demo.com SSL key] action nothing (skipped due to action :nothing)
     
      * directory[/var/opt/gitlab/nginx/www/.well-known/acme-challenge] action nothing (skipped due to action :nothing)
     
      * file[/var/opt/gitlab/nginx/www/.well-known/acme-challenge/tIqSYzS1vFP_Y4brcFAMHgYP48HSKOLhWocnBIqb0AY] action nothing (skipped due to action :nothing)
     
-    ​    
-    ​    * file[/var/opt/gitlab/nginx/www/.well-known/acme-challenge/tIqSYzS1vFP_Y4brcFAMHgYP48HSKOLhWocnBIqb0AY] action delete
-     - delete file /var/opt/gitlab/nginx/www/.well-known/acme-challenge/tIqSYzS1vFP_Y4brcFAMHgYP48HSKOLhWocnBIqb0AY
-      * ruby_block[create certificate for git.demo.com] action run
-
-  
-
+    * file[/var/opt/gitlab/nginx/www/.well-known/acme-challenge/tIqSYzS1vFP_Y4brcFAMHgYP48HSKOLhWocnBIqb0AY] action delete
+    - delete file /var/opt/gitlab/nginx/www/.well-known/acme-challenge/tIqSYzS1vFP_Y4brcFAMHgYP48HSKOLhWocnBIqb0AY
+    * ruby_block[create certificate for git.demo.com] action run
