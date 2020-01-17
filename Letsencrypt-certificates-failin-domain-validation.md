@@ -163,11 +163,9 @@ nginx['custom_gitlab_server_config'] = "location /.well-known/acme-challenge/ {\
 
 # 参考
 
-[1]: https://forum.gitlab.com/t/letsencrypt-certificates-fail-in-domain-validation/18112
-[2]: https://stackoverflow.com/questions/59239820/gitlab-letsencrypt-http-authorization-error
-[3]: https://letsencrypt.org/docs/challenge-types/
-
-
+https://forum.gitlab.com/t/letsencrypt-certificates-fail-in-domain-validation/18112
+https://stackoverflow.com/questions/59239820/gitlab-letsencrypt-http-authorization-error
+https://letsencrypt.org/docs/challenge-types/
 
 # 附录
 
